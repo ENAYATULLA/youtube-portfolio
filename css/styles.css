@@ -1,0 +1,203 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+}
+
+header {
+    background-color: #282c34;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative; /* Allow positioning for the nav button */
+}
+
+button.nav-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.3em;
+    cursor: pointer;
+    position: absolute;
+    top: 9px;
+    right: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul {
+    display: none; /* Hide the menu initially */
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Adjust based on header height */
+    right: 0;
+    background-color: #282c34;
+    width: 200px; /* Set a width for the nav menu */
+    z-index: 1;
+}
+
+nav ul.active {
+    display: flex; /* Show menu when active */
+}
+
+nav ul li {
+    margin: 10px 0; /* Vertical spacing for mobile */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px; /* Add padding for better touch targets */
+    display: block; /* Make links fill the list items */
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #61dafb; /* Add hover effect */
+}
+
+main {
+    padding: 20px;
+}
+
+.video-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    animation: fadeIn 1s;
+}
+
+.video {
+    margin: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.video:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #282c34;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.about-me, .blog-posts {
+    animation: slideIn 1s;
+}
+
+@media (max-width: 600px) {
+    .video-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Styles for scroll-to-top button */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #61dafb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 1.2em;
+    display: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.scroll-to-top:hover {
+    background-color: #21a1f1;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    nav ul {
+        display: none; /* Hide the menu initially */
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Adjust based on header height */
+        right: 0;
+        background-color: #282c34;
+        width: 200px; /* Set a width for the nav menu */
+        z-index: 1;
+    }
+}
+/* Existing styles... */
+
+.nav-toggle {
+    display: block; /* Always show the toggle button */
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+nav ul {
+    display: none; /* Hide the menu initially */
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #282c34;
+    width: 100%;
+    z-index: 1;
+}
+
+nav ul.active {
+    display: flex; /* Show menu when active */
+}
+
+nav ul li {
+    margin: 10px 0; /* Vertical spacing for mobile */
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+.justified-text {
+    text-align: justify;
+}
+.thank-you-message {
+    font-weight: bold; /* Makes the text bold */
+    color: #FF5733; /* Change this to your desired color */
+}

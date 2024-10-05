@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>About Me</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(to right, #f0f4f8, #d9e8f5);
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #1a1a1a;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .about-me {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #007bff;
+        }
+        .justified-text {
+            text-align: justify;
+            margin: 15px 0;
+        }
+        .portfolio-link {
+            display: inline-block;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .portfolio-link:hover {
+            background: #0056b3;
+        }
+        .thank-you-message {
+            text-align: center;
+            font-weight: bold;
+            margin-top: 30px;
+            color: #555;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #1a1a1a;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .hackathon-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About Me</h1>
+        <button class="nav-toggle">☰</button> <!-- Side button for navigation -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-me">
+            <h2>Hello!</h2>
+            <p class="justified-text">
+                Hello, I'm Enayat Ullah! I am a passionate software engineer and web developer with a keen interest in exploring life's biggest questions through the lenses of philosophy, psychology, and education. My goal is to help you gain a deeper understanding of your mind and behavior, guiding your thoughts in a new direction. Each video I create simplifies complex concepts, making them easy to grasp and apply to your life. Let's embark on this journey together to transform our thinking and unlock a new understanding.
+            </p>
+
+            <p>My personal portfolio . go and check out below</p>
+            <a href="https://enayat-portfolio.vercel.app/" target="_blank" class="portfolio-link">portfolio</a>
+            
+            <br>
+            <h3>My Hackathon Achievement</h3>
+            <p class="justified-text">
+                I am proud to have participated in the Arabh 2022 Hackathon in Kanpur, where my team and I secured the third place award in the ideation round. Our innovative idea addressed the pressing issue of plastic waste in today's world, which poses a significant threat to our environment. We conceptualized a machine that collects plastic bottles from users and, in exchange, provides them with coupons and coins. This initiative aims to encourage recycling and reduce plastic pollution.
+            </p>
+            <img src="images/award.jpg" alt="Hackathon Award Winning Moment" class="hackathon-image">
+            <p class="thank-you-message">Thank you for visiting!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Enayatullah. All rights reserved.</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

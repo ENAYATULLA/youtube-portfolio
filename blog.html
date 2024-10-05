@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Blog</title>
+    <style>
+        /* Basic styles for the hidden content */
+        .full-content {
+            display: none; /* Hide full content by default */
+        }
+        .toggle-button {
+            cursor: pointer; /* Change cursor to pointer for button */
+            color: blue; /* Style the button */
+            text-decoration: underline; /* Underline for emphasis */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Blog</h1>
+        <button class="nav-toggle">☰</button> <!-- Side button for navigation -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="blog-posts">
+            <h2>Latest Blog Posts</h2>
+            <article>
+                <h3>Mind Ka Magic: Psychology Ke 5 Secrets Jo Aapki Life Ko Badal Sakte Hain!</h3>
+                <p>Kya aapne kabhi socha hai, aapke dimaag ki asli taakat kya hai? Is post mein, hum discuss karenge 5 psychological concepts jo aapki decisions, emotions, aur stress management mein madad kar sakte hain.</p>
+                <div class="full-content">
+                    <p><strong>1. Maslow's Hierarchy of Needs:</strong> Yeh pyramid aapki needs ko ek sequence mein arrange karta hai, jahan pehle physiological needs aati hain. Jab tak aapki basic needs pura nahi hoti, tab tak aap apne goals achieve nahi kar sakte.</p>
+                    <p><strong>2. Cognitive Biases:</strong> Cognitive biases wo thinking errors hain jo aapke decisions ko affect karte hain. Inhe samajhkar aap zyada informed decisions le sakte hain.</p>
+                    <p><strong>3. Emotional Intelligence:</strong> Emotional Intelligence (EI) aapke aur doosron ke emotions ko samajhna aur unhe manage karne ki ability hai, jo aapko zyada successful banata hai.</p>
+                    <p><strong>4. Growth Mindset vs. Fixed Mindset:</strong> Growth mindset challenges ko accept karna aur failure se seekhna hai, jabki fixed mindset mein log apni capabilities ko limit kar dete hain.</p>
+                    <p><strong>5. Stress and Coping Mechanisms:</strong> Stress management ke liye deep breathing, exercise, aur positive thinking jaise coping mechanisms ka istemal karke apne aap ko relax kar sakte hain.</p>
+                    <p><strong>Conclusion:</strong> In concepts ko samajhkar aap smarter decisions le sakte hain, stress ko effectively manage kar sakte hain, aur apne emotions ko control kar sakte hain!</p>
+                </div>
+                <span class="toggle-button" onclick="toggleContent(this)">Read more...</span>
+            </article>
+            <article>
+                <h3>The Concept of Karma in Indian Philosophy: Understanding Action and Consequence</h3>
+                <p>Kya Aapki Zindagi Ka Script Likha Hai? Is post mein, hum Karma ke intriguing law ke baare mein jaanenge, jo har action ke saath ek consequence ko samjhaata hai.</p>
+                <div class="full-content">
+                    <p><strong>What is Karma?</strong> Karma ka matlab hai cause and effect ka niyam. Jo action aap karte hain, uska ek corresponding consequence hota hai.</p>
+                    <p><strong>Buddhism:</strong> In Buddhism, Karma law of cause and effect hai, jismein har action future experiences ko influence karta hai.</p>
+                    <p><strong>Hinduism:</strong> Hindu philosophy mein, Karma life, death, aur rebirth cycle ka part hai. Good actions positive outcomes laate hain, jabki bad actions suffering ka karan bante hain.</p>
+                    <p><strong>Karma Yoga:</strong> Karma Yoga selfless action ka practice hai. Yeh humein results se pare hoke actions par focus karna sikhata hai.</p>
+                    <p><strong>Conclusion:</strong> Karma ko samajhna humein empower karta hai aur yeh yaad dilata hai ki hamaari actions ke hamesha consequences hote hain, jo positivity aur self-improvement ko promote karte hain.</p>
+                </div>
+                <span class="toggle-button" onclick="toggleContent(this)">Read more...</span>
+            </article>
+            <!-- Add more blog posts as needed -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Enayatullah. All rights reserved.</p>
+    </footer>
+    <script src="js/main.js"></script>
+    <script>
+        function toggleContent(element) {
+            const fullContent = element.previousElementSibling;
+            if (fullContent.style.display === "none" || fullContent.style.display === "") {
+                fullContent.style.display = "block"; // Show full content
+                element.textContent = "Read less..."; // Change button text
+            } else {
+                fullContent.style.display = "none"; // Hide full content
+                element.textContent = "Read more..."; // Change button text back
+            }
+        }
+    </script>
+</body>
+</html>
